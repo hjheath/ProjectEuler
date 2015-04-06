@@ -3,7 +3,7 @@
 from itertools import count
 
 
-def fibonacci():
+def fibonaccis():
     """Fibonacci number generator."""
     second_last, last = 1, 1
     while True:
@@ -11,7 +11,7 @@ def fibonacci():
         second_last, last = last, last + second_last
 
 
-def prime():
+def primes():
     """
     Prime number generator.
 
@@ -33,3 +33,20 @@ def prime():
             while new_composite in composite_numbers or new_composite % 2 == 0:
                 new_composite += highest_factor
             composite_numbers[new_composite] = highest_factor
+
+
+def prime_factors(number):
+    """
+    Prime factor generator.
+
+    :param number: An int for which we get the prime factors.
+    """
+    maximum = number
+    for prime in primes():
+        if prime > maximum:
+            break
+        while number % prime == 0:
+            yield prime
+            number = number / prime
+            if number == 1:
+                break
