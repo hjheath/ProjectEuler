@@ -2,11 +2,11 @@
 
 from math import sqrt
 from itertools import takewhile
-from generators import primes
+from projecteuler.generators import primes
 
 
 NUMBER = 600851475143
-PRIME_FACTORS = [x for x in takewhile(lambda x: x < sqrt(NUMBER), primes())
+prime_factors = [x for x in takewhile(lambda x: x < sqrt(NUMBER), primes())
                  if NUMBER % x == 0]
-ANSWER = PRIME_FACTORS[-1]
-print(ANSWER)
+answer = prime_factors[-1]
+print(answer)
