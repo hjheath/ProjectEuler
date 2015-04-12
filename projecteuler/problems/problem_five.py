@@ -3,6 +3,7 @@
 from projecteuler.generators import prime_factors
 from collections import Counter
 from functools import reduce
+import operator
 
 
 highest_count = {}
@@ -19,6 +20,6 @@ for number in range(1, 21):
 factors = [factor ** highest_count[factor] for factor in highest_count]
 
 # This multiplies together the elements of the list.
-answer = reduce(lambda x, y: x * y, factors)
+answer = reduce(operator.mul, factors)
 
 print(answer)
