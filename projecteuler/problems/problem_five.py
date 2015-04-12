@@ -1,4 +1,4 @@
-"""Problem five of https://github.com/heathy/project_euler"""
+"""Problem five of https://projecteuler.net"""
 
 from projecteuler.generators import prime_factors
 from collections import Counter

@@ -1,4 +1,4 @@
-"""Problem three of https://github.com/heathy/project_euler"""
+"""Problem three of https://projecteuler.net"""
 
 from math import sqrt
 from itertools import takewhile

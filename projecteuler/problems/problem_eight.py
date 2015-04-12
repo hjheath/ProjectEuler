@@ -1,4 +1,4 @@
-"""Problem eight of https://github.com/heathy/project_euler"""
+"""Problem eight of https://projecteuler.net"""
 
 from pkg_resources import resource_string
 from functools import reduce

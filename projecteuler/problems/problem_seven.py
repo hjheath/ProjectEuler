@@ -1,4 +1,4 @@
-"""Problem seven of https://github.com/heathy/project_euler"""
+"""Problem seven of https://projecteuler.net"""
 
 from projecteuler.generators import primes
 

@@ -1,4 +1,4 @@
-"""Problem two of https://github.com/heathy/project_euler"""
+"""Problem two of https://projecteuler.net"""
 
 from itertools import takewhile
 from projecteuler.generators import fibonaccis

@@ -1,4 +1,4 @@
-"""Problem four of https://github.com/heathy/project_euler"""
+"""Problem four of https://projecteuler.net"""
 
 from projecteuler.inspectors import is_palindrome
 

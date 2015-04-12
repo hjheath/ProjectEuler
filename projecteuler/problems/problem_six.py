@@ -1,4 +1,4 @@
-"""Problem six of https://github.com/heathy/project_euler"""
+"""Problem six of https://projecteuler.net"""
 
 
 def problem_six():
