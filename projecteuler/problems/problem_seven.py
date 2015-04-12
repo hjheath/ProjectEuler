@@ -2,12 +2,17 @@
 
 from projecteuler.generators import primes
 
-counter = 0
 
-for prime in primes():
-    counter += 1
-    if counter == 10001:
-        answer = prime
-        break
+def problem_seven():
+    """Solution to problem seven."""
+    counter = 0
 
-print(answer)
+    for prime in primes():
+        counter += 1
+        if counter == 10001:
+            answer = prime
+            break
+    return answer
+
+if __name__ == '__main__':
+    print(problem_seven())

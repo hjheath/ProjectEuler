@@ -2,12 +2,18 @@
 
 from projecteuler.inspectors import is_palindrome
 
-answer = 0
 
-for x in range(100, 1000):
-    for y in range(100, 1000):
-        product = x * y
-        if is_palindrome(product) and product > answer:
-            answer = product
+def problem_four():
+    """Solution to problem four."""
+    answer = 0
 
-print(answer)
+    for x in range(100, 1000):
+        for y in range(100, 1000):
+            product = x * y
+            if is_palindrome(product) and product > answer:
+                answer = product
+    return answer
+
+
+if __name__ == '__main__':
+    print(problem_four())

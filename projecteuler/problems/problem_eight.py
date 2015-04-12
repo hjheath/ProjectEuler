@@ -6,7 +6,7 @@ import operator
 
 
 def problem_eight():
-    """Solution to problem eight"""
+    """Solution to problem eight."""
     file_conents = resource_string('projecteuler.data', 'problem_eight.dat')
     file_as_string = file_conents.decode('utf-8')
     long_number = file_as_string.replace('\n', '')
