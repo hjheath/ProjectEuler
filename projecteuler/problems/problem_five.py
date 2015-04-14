@@ -2,8 +2,7 @@
 
 from projecteuler.generators import prime_factors
 from collections import Counter
-from functools import reduce
-import operator
+from projecteuler.maths_functions import multiply
 
 
 def problem_five():
@@ -22,7 +21,7 @@ def problem_five():
     factors = [factor ** highest_count[factor] for factor in highest_count]
 
     # This multiplies together the elements of the list.
-    answer = reduce(operator.mul, factors)
+    answer = multiply(factors)
     return answer
 
 

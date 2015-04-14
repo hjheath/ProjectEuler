@@ -1,8 +1,7 @@
 """Problem eight of https://projecteuler.net"""
 
 from pkg_resources import resource_string
-from functools import reduce
-import operator
+from projecteuler.maths_functions import multiply
 
 
 def problem_eight():
@@ -20,7 +19,7 @@ def problem_eight():
         if 0 in thirteen_digits:
             continue
 
-        product = reduce(operator.mul, thirteen_digits)
+        product = multiply(thirteen_digits)
         if product > answer:
             answer = product
 
