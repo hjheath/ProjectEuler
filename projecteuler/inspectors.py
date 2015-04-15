@@ -6,6 +6,8 @@ def is_palindrome(number):
     Check if a number is a palindrome
 
     :param number: The int to check.
+
+    :returns: True if the number is a palindrome, else False.
     """
     number_string = str(number)
     reversed_number = ''.join(reversed(number_string))
