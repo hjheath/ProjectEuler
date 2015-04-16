@@ -1,6 +1,6 @@
 """Store the answers to the problems at https://projecteuler.net."""
 
-PROBLEM_ANSWERS = {'problem_one': 2331681,
+PROBLEM_ANSWERS = {'problem_one': 233168,
                    'problem_two': 4613732,
                    'problem_three': 6857,
                    'problem_four': 906609,

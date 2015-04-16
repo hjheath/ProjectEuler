@@ -3,10 +3,6 @@
 import unittest
 import logging
 
-# Using import * is acceptable here as the modules in the problems directory
-# follow a strict naming convention. This works because __all__ is defined in
-# problems.__init__.py to include all modules in the problems direcory.
-from projecteuler.problems import *
 from answers import PROBLEM_ANSWERS
 
 logger = logging.getLogger(__name__)
@@ -22,8 +18,13 @@ class TestProblems(unittest.TestCase):
         :param problem_name: A string of the module of the problem to check.
         """
         logger.info('Checking the answer to problem %s.', problem_name)
-        # Use the module name to get the module from the global namespace.
-        module = globals()[problem_name]
+
+        # Use __import__ as we only know the module we need at runtime.
+        module_path = '.'.join(['projecteuler', 'problems', problem_name])
+
+        # The fromlist must not be empty to obtain a reference to the module.
+        module = __import__(module_path, fromlist=[None])
+
         # Conveninetly the problem function has the same name as the module.
         problem = getattr(module, problem_name)
 
