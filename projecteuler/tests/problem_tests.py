@@ -3,7 +3,7 @@
 import unittest
 import logging
 
-from answers import PROBLEM_ANSWERS
+from projecteuler.tests.answers import PROBLEM_ANSWERS
 
 logger = logging.getLogger(__name__)
 

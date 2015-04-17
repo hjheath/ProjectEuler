@@ -50,3 +50,15 @@ def prime_factors(number):
             number = number / prime
             if number == 1:
                 break
+
+
+def triangle_numbers():
+    """
+    Triangle number generator.
+
+    The nth triangle number is the sum of the first n numbers.
+    """
+    number = 1
+    while True:
+        yield int(number * (number + 1) / 2)
+        number += 1
