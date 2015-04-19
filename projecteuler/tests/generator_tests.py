@@ -58,3 +58,7 @@ class TestGenerators(unittest.TestCase):
         collatz_7 = 22
         next_collatz = generators.next_collatz(7)
         self.assertEqual(next_collatz, collatz_7)
+
+
+if __name__ == '__main__':
+    unittest.main()
