@@ -19,7 +19,7 @@ def multiply(number_list):
 
 def factor_count(number):
     """
-    Calculate the number of factors of a numver.
+    Calculate the number of factors of a number.
 
     :param number: The number to get the factors of (int).
 
