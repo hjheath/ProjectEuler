@@ -7,7 +7,7 @@ def fibonaccis():
     """Fibonacci number generator."""
     second_last, last = 1, 1
     while True:
-        yield last
+        yield second_last
         second_last, last = last, last + second_last
 
 

@@ -11,7 +11,7 @@ def problem_14():
     return answer
 
 
-class CollatzCalculator:
+class CollatzCalculator(object):
     """A class to calculate the collatz count of a number."""
 
     def __init__(self):
