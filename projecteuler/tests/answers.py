@@ -12,4 +12,5 @@ PROBLEM_ANSWERS = {'problem_one': 233168,
                    'problem_ten': 142913828922,
                    'problem_11': 70600674,
                    'problem_12': 76576500,
-                   'problem_13': 5537376230}
+                   'problem_13': 5537376230,
+                   'problem_14': 837799}

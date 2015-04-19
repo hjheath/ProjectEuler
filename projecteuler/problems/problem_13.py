@@ -4,7 +4,7 @@ from pkg_resources import resource_string
 
 
 def problem_13():
-    """Solution to problem eight."""
+    """Solution to problem 13."""
     file_conents = resource_string('projecteuler.data', 'problem_13.dat')
     file_as_string = file_conents.decode('utf-8')
     numbers = file_as_string.split('\n')

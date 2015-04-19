@@ -1,4 +1,4 @@
-"""Generate sequences of numbers."""
+"""Functions to generate sequences of numbers."""
 
 from itertools import count
 
@@ -62,3 +62,18 @@ def triangle_numbers():
     while True:
         yield int(number * (number + 1) / 2)
         number += 1
+
+
+def next_collatz(number):
+    """
+    Get the next number in a collatz series.
+
+    :param number: The previous number in the collatz series.
+
+    :returns: The next number in the collatz series.
+    """
+    if number % 2 == 0:
+        number = number // 2
+    else:
+        number = (3 * number) + 1
+    return number
