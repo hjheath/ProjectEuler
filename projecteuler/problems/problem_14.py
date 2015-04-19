@@ -24,12 +24,11 @@ class CollatzCalculator:
 
         :param number: The starting number in the collatz sequence.
 
-        :param count_cache: A dict of {numbers: collatz counts}.
-
         :returns: The collatz count of the number.
         """
         if number not in self.count_cache:
             next_number = next_collatz(number)
+            # Use recursion until we find a number that is not in the cache.
             count = self.collatz_count(next_number) + 1
             self.count_cache[number] = count
         else:
