@@ -4,7 +4,7 @@ from pkg_resources import resource_string
 from projecteuler.maths_functions import multiply
 
 
-def problem_eight():
+def problem_8():
     """Solution to problem eight."""
     file_conents = resource_string('projecteuler.data', 'problem_eight.dat')
     file_as_string = file_conents.decode('utf-8')
@@ -27,4 +27,4 @@ def problem_eight():
 
 
 if __name__ == '__main__':
-    print(problem_eight())
+    print(problem_8())

@@ -14,29 +14,32 @@ def problem_11():
     highest_product = 0
 
     # Horizontal sum.
-    for y in range(0, 20):
-        for x in range(0, 17):
-            product = multiply(grid[y][x: x + 3])
+    for y_value in range(0, 20):
+        for x_value in range(0, 17):
+            product = multiply(grid[y_value][x_value: x_value + 3])
             highest_product = max(product, highest_product)
 
     # Vertical sum.
-    for y in range(0, 17):
-        for x in range(0, 20):
-            adjacent_numbers = [grid[y + i][x] for i in range(0, 4)]
+    for y_value in range(0, 17):
+        for x_value in range(0, 20):
+            adjacent_numbers = [grid[y_value + i][x_value] for i in
+                                range(0, 4)]
             product = multiply(adjacent_numbers)
             highest_product = max(product, highest_product)
 
     # Diagonal down to the right sum.
-    for y in range(0, 17):
-        for x in range(0, 17):
-            adjacent_numbers = [grid[y + i][x + i] for i in range(0, 4)]
+    for y_value in range(0, 17):
+        for x_value in range(0, 17):
+            adjacent_numbers = [grid[y_value + i][x_value + i] for i in
+                                range(0, 4)]
             product = multiply(adjacent_numbers)
             highest_product = max(product, highest_product)
 
     # Diagonal down to the left sum.
-    for y in range(0, 17):
-        for x in range(3, 20):
-            adjacent_numbers = [grid[y + i][x - i] for i in range(0, 4)]
+    for y_value in range(0, 17):
+        for x_value in range(3, 20):
+            adjacent_numbers = [grid[y_value + i][x_value - i] for i in
+                                range(0, 4)]
             product = multiply(adjacent_numbers)
             highest_product = max(product, highest_product)
 

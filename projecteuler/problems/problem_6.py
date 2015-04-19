@@ -1,12 +1,12 @@
 """Problem six of https://projecteuler.net"""
 
 
-def problem_six():
+def problem_6():
     """Solution to problem six."""
     sum_of_squares = 0
 
-    for x in range(1, 101):
-        sum_of_squares += (x ** 2)
+    for x_value in range(1, 101):
+        sum_of_squares += (x_value ** 2)
 
     square_of_sum = sum(range(1, 101)) ** 2
     answer = square_of_sum - sum_of_squares
@@ -14,4 +14,4 @@ def problem_six():
 
 
 if __name__ == '__main__':
-    print(problem_six())
+    print(problem_6())

@@ -3,7 +3,7 @@
 from projecteuler.generators import primes
 
 
-def problem_seven():
+def problem_7():
     """Solution to problem seven."""
     counter = 0
 
@@ -15,4 +15,4 @@ def problem_seven():
     return answer
 
 if __name__ == '__main__':
-    print(problem_seven())
+    print(problem_7())

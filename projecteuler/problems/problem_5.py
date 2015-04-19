@@ -5,7 +5,7 @@ from collections import Counter
 from projecteuler.maths_functions import multiply
 
 
-def problem_five():
+def problem_5():
     """Solution to problem five."""
     highest_count = {}
     for number in range(1, 21):
@@ -26,4 +26,4 @@ def problem_five():
 
 
 if __name__ == '__main__':
-    print(problem_five())
+    print(problem_5())

@@ -3,17 +3,17 @@
 from projecteuler.inspectors import is_palindrome
 
 
-def problem_four():
+def problem_4():
     """Solution to problem four."""
     answer = 0
 
-    for x in range(100, 1000):
-        for y in range(100, 1000):
-            product = x * y
+    for x_value in range(100, 1000):
+        for y_value in range(100, 1000):
+            product = x_value * y_value
             if is_palindrome(product) and product > answer:
                 answer = product
     return answer
 
 
 if __name__ == '__main__':
-    print(problem_four())
+    print(problem_4())

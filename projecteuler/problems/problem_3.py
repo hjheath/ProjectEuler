@@ -7,7 +7,7 @@ from projecteuler.generators import primes
 NUMBER = 600851475143
 
 
-def problem_three():
+def problem_3():
     """Solution to problem three."""
     prime_factors = [x for x in takewhile(lambda x: x < sqrt(NUMBER), primes())
                      if NUMBER % x == 0]
@@ -16,4 +16,4 @@ def problem_three():
 
 
 if __name__ == '__main__':
-    print(problem_three())
+    print(problem_3())

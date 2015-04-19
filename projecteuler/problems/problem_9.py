@@ -1,7 +1,7 @@
 """Problem nine of https://projecteuler.net"""
 
 
-def problem_nine():
+def problem_9():
     """Solution to problem nine."""
     # Use pen and paper to see a must be less than 500.
     triplet = [(a, b, 1000 - a - b) for a in range(1, 500) for b in range(1, a)
@@ -11,4 +11,4 @@ def problem_nine():
 
 
 if __name__ == '__main__':
-    print(problem_nine())
+    print(problem_9())

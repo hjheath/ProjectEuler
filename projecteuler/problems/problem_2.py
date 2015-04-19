@@ -4,7 +4,7 @@ from itertools import takewhile
 from projecteuler.generators import fibonaccis
 
 
-def problem_two():
+def problem_2():
     """Solution to problem two."""
     fibonacci_numbers = [x for x in
                          takewhile(lambda x: x < 4000000, fibonaccis())]
@@ -12,4 +12,4 @@ def problem_two():
     return answer
 
 if __name__ == '__main__':
-    print(problem_two())
+    print(problem_2())
