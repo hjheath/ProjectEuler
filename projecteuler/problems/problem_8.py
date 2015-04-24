@@ -6,7 +6,7 @@ from projecteuler.maths_functions import multiply
 
 def problem_8():
     """Solution to problem eight."""
-    file_conents = resource_string('projecteuler.data', 'problem_eight.dat')
+    file_conents = resource_string('projecteuler.data', 'problem_8.dat')
     file_as_string = file_conents.decode('utf-8')
     long_number = file_as_string.replace('\n', '')
     answer = 0
