@@ -15,5 +15,5 @@ setup(
     license='LICENSE.txt',
     description='Package to solve Project Euler problems',
     long_description=open('README.md').read(),
-    install_requires=[],
+    install_requires=['num2words >= 0.5.2'],
 )
