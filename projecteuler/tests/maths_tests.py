@@ -34,6 +34,13 @@ class TestInspectors(unittest.TestCase):
         # Test a square number.
         self.assertEqual(maths.factor_count(9), 3)
 
+    def test_get_divisor_list(self):
+        """Test getting a list of divisors of a number."""
+        self.assertEqual(maths.get_divisor_list(6), [1, 2, 3])
+
+        # Test a square number.
+        self.assertEqual(maths.get_divisor_list(9), [1, 3])
+
 
 if __name__ == '__main__':
     unittest.main()

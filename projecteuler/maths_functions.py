@@ -38,3 +38,28 @@ def factor_count(number):
         count += 1
 
     return count
+
+
+def get_divisor_list(number):
+    """
+    Calculate the divisors of a number.
+
+    :param number: The number to get the divisors of (int).
+
+    :returns: An list of divisors (ints) not including the number itself.
+    """
+    root = math.sqrt(number)
+    factor_list = []
+
+    # Each factor below the sqrt has a corresponding factor above it.
+    for integer in range(1, math.ceil(root)):
+        if number % integer == 0:
+            factor_list.extend([integer, number // integer])
+
+    # Add the square root if the number is square.
+    if root % 1 == 0:
+        factor_list.append(int(root))
+
+    factor_list.remove(number)
+    factor_list.sort()
+    return factor_list
