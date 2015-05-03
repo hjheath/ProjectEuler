@@ -32,3 +32,24 @@ def is_prime(number):
         if number % prime == 0:
             return False
     return True
+
+
+def pandigital_product(multiplicand, multiplier):
+    """
+    Determine if two numbers form a pandigital product.
+
+    :param multiplicand: The multiplicand in the product.
+
+    :param multiplier: The multiplier in the product.
+
+    :returns: The product if pandigital else False.
+    """
+    product = multiplicand * multiplier
+    number_list = str(product) + str(multiplicand) + str(multiplier)
+    number_set = set(number_list)
+    if '0' in number_set:
+        return False
+    if len(number_set) == 9 and len(number_list) == 9:
+        return product
+    else:
+        return False

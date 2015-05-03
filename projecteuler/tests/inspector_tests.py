@@ -31,6 +31,15 @@ class TestInspectors(unittest.TestCase):
         # Test a negative number.
         self.assertFalse(inspectors.is_prime(-7))
 
+    def test_pandigital_product(self):
+        """Test detecting pandigital products."""
+        # A product with duplicate digits.
+        self.assertFalse(inspectors.pandigital_product(1269, 46))
+        # A product containing a zero.
+        self.assertFalse(inspectors.pandigital_product(39, 1860))
+        # A pandigital product.
+        self.assertEqual(inspectors.pandigital_product(39, 186), 7254)
+
 
 if __name__ == '__main__':
     unittest.main()
