@@ -40,6 +40,14 @@ class TestInspectors(unittest.TestCase):
         # A pandigital product.
         self.assertEqual(inspectors.pandigital_product(39, 186), 7254)
 
+    def test_curious_fractions(self):
+        """Test detecting curious fractions."""
+        self.assertTrue(inspectors.is_curious_fraction(49, 98))
+        self.assertFalse(inspectors.is_curious_fraction(23, 32))
+
+        # Test the trivial case is False.
+        self.assertFalse(inspectors.is_curious_fraction(30, 50))
+
 
 if __name__ == '__main__':
     unittest.main()

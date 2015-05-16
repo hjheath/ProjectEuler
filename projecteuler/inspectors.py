@@ -53,3 +53,34 @@ def pandigital_product(multiplicand, multiplier):
         return product
     else:
         return False
+
+
+def is_curious_fraction(numerator, denominator):
+    """
+    Determine if two numbers form a curious fraction.
+
+    A curious fraction is where removing a number common to the numerator and
+    denominator is equal to the original fraction.
+
+    :param numerator: The numerator of the fraction as an int.
+
+    :param denominator: The denominator of the fraction as an int.
+
+    :returns: True if the fraction is curious else False.
+    """
+    fraction = numerator / denominator
+    numerator = str(numerator)
+    denominator = str(denominator)
+    if len(numerator) == 1:
+        return False
+    if numerator.endswith('0') or denominator.endswith('0'):
+        return False
+
+    for number in numerator:
+        new_numerator = numerator.replace(number, '', 1)
+        new_denominator = denominator.replace(number, '', 1)
+        new_fraction = int(new_numerator) / int(new_denominator)
+        if new_fraction == fraction:
+            return True
+
+    return False
