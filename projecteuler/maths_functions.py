@@ -63,3 +63,17 @@ def get_divisor_list(number):
     factor_list.remove(number)
     factor_list.sort()
     return factor_list
+
+
+def factorial(number):
+    """
+    Recursively calculate the factorial of a number.
+
+    :param number: A positive integer.
+
+    :returns: The factorial (int).
+    """
+    factorial = 1
+    for num in range(1, number + 1):
+        factorial *= num
+    return factorial
