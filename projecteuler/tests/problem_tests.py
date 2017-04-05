@@ -25,7 +25,7 @@ class TestProblems(unittest.TestCase):
         # The fromlist must not be empty to obtain a reference to the module.
         module = __import__(module_path, fromlist=[None])
 
-        # Conveninetly the problem function has the same name as the module.
+        # Conveniently the problem function has the same name as the module.
         problem = getattr(module, problem_name)
 
         # The rest is then simple.
