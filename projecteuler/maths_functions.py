@@ -77,3 +77,12 @@ def factorial(number):
     for num in range(1, number + 1):
         factorial *= num
     return factorial
+
+
+def rotations(number):
+    """Return a set of all rotations of a number 123 => {123, 231, 312}"""
+    number = str(number)
+    result = set()
+    for index, _ in enumerate(number):
+        result.add(int(number[index:] + number[:index]))
+    return result

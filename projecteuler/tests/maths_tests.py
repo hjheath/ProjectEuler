@@ -47,6 +47,13 @@ class TestInspectors(unittest.TestCase):
         self.assertEqual(maths.factorial(1), 1)
         self.assertEqual(maths.factorial(5), 120)
 
+    def test_rotations(self):
+        """Test getting a list of rotations of a number."""
+        self.assertEqual(maths.rotations(123), {123, 231, 312})
+        self.assertEqual(maths.rotations(111), {111})
+        self.assertEqual(maths.rotations(121), {121, 211, 112})
+        self.assertEqual(maths.rotations(1), {1})
+
 
 if __name__ == '__main__':
     unittest.main()
