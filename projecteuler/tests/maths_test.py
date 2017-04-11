@@ -53,7 +53,3 @@ class TestInspectors(unittest.TestCase):
         self.assertEqual(maths.rotations(111), {111})
         self.assertEqual(maths.rotations(121), {121, 211, 112})
         self.assertEqual(maths.rotations(1), {1})
-
-
-if __name__ == '__main__':
-    unittest.main()

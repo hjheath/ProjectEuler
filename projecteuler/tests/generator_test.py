@@ -59,6 +59,14 @@ class TestGenerators(unittest.TestCase):
         next_collatz = generators.next_collatz(7)
         self.assertEqual(next_collatz, collatz_7)
 
+    def test_pythagorean_triples(self):
+        """Test the Pythagorean triple generator"""
+        triples = [x for x in generators.pythagorean_triples(5)]
+        self.assertEqual(triples, [(3, 4, 5)])
 
-if __name__ == '__main__':
-    unittest.main()
+        triples = [x for x in generators.pythagorean_triples(13)]
+        self.assertTrue((5, 12, 13) in triples)
+        self.assertTrue(len(triples) == 3)
+
+        triples = [x for x in generators.pythagorean_triples(0)]
+        self.assertEqual(triples, [])

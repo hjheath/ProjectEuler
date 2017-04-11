@@ -31,6 +31,13 @@ class TestInspectors(unittest.TestCase):
         # Test a negative number.
         self.assertFalse(inspectors.is_prime(-7))
 
+    def test_is_pandigital(self):
+        """Test detecting pandigitals"""
+        self.assertTrue(inspectors.is_pandigital('123456789'))
+        self.assertFalse(inspectors.is_pandigital('12345678'))
+        self.assertFalse(inspectors.is_pandigital('012345678'))
+        self.assertFalse(inspectors.is_pandigital('1234567899'))
+
     def test_pandigital_product(self):
         """Test detecting pandigital products."""
         # A product with duplicate digits.
@@ -47,7 +54,3 @@ class TestInspectors(unittest.TestCase):
 
         # Test the trivial case is False.
         self.assertFalse(inspectors.is_curious_fraction(30, 50))
-
-
-if __name__ == '__main__':
-    unittest.main()

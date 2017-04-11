@@ -77,3 +77,18 @@ def next_collatz(number):
     else:
         number = (3 * number) + 1
     return number
+
+
+def pythagorean_triples(limit):
+    """Pythagorean triple generator."""
+    for x in range(1, limit):
+        x_squared = x * x
+        y = x + 1
+        z = y + 1
+        while z <= limit:
+            expected_z_squared = x_squared + y * y
+            while z * z < expected_z_squared:
+                z += 1
+            if z * z == expected_z_squared and z <= limit:
+                yield (x, y, z)
+            y += 1

@@ -33,6 +33,13 @@ def is_prime(number):
             return False
     return True
 
+def is_pandigital(number):
+    """Determine if a number (as a string) is pandigital"""
+    number_set = set(number)
+    if '0' in number_set:
+        return False
+    return len(number_set) == 9 and len(number) == 9
+
 
 def pandigital_product(multiplicand, multiplier):
     """
@@ -42,17 +49,12 @@ def pandigital_product(multiplicand, multiplier):
 
     :param multiplier: The multiplier in the product.
 
-    :returns: The product if pandigital else False.
+    :returns: The product if pandigital else None.
     """
     product = multiplicand * multiplier
-    number_list = str(product) + str(multiplicand) + str(multiplier)
-    number_set = set(number_list)
-    if '0' in number_set:
-        return False
-    if len(number_set) == 9 and len(number_list) == 9:
+    number = str(product) + str(multiplicand) + str(multiplier)
+    if is_pandigital(number):
         return product
-    else:
-        return False
 
 
 def is_curious_fraction(numerator, denominator):
