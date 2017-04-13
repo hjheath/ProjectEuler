@@ -1,1 +1,2 @@
 num2words>=0.5.2
+codecov==2.0.5
