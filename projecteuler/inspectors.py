@@ -33,12 +33,16 @@ def is_prime(number):
             return False
     return True
 
-def is_pandigital(number):
+def is_pandigital(number, include_zero=False):
     """Determine if a number (as a string) is pandigital"""
     number_set = set(number)
-    if '0' in number_set:
-        return False
-    return len(number_set) == 9 and len(number) == 9
+    if include_zero:
+        length = 10
+    else:
+        length = 9
+        if '0' in number_set:
+            return False
+    return len(number_set) == len(number) == length
 
 
 def pandigital_product(multiplicand, multiplier):
