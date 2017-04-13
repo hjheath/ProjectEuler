@@ -5,8 +5,8 @@ from pkg_resources import resource_string
 
 def problem_13():
     """Solution to problem 13."""
-    file_conents = resource_string('projecteuler.data', 'problem_13.dat')
-    file_as_string = file_conents.decode('utf-8')
+    file_contents = resource_string('projecteuler.data', 'problem_13.dat')
+    file_as_string = file_contents.decode('utf-8')
     numbers = file_as_string.split('\n')
     # Only the first 11 digits can affect the first 10 digits of the sum.
     significant_digits = [int(number[:11]) for number in numbers]

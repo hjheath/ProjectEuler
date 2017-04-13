@@ -6,8 +6,8 @@ from projecteuler.maths_functions import multiply
 
 def problem_11():
     """Solution to problem 11."""
-    file_conents = resource_string('projecteuler.data', 'problem_11.dat')
-    file_as_string = file_conents.decode('utf-8')
+    file_contents = resource_string('projecteuler.data', 'problem_11.dat')
+    file_as_string = file_contents.decode('utf-8')
     lines = file_as_string.split('\n')
     grid = [line.split(' ') for line in lines]
     grid = [[int(entry) for entry in line] for line in grid]

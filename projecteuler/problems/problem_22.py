@@ -5,8 +5,8 @@ from pkg_resources import resource_string
 
 def problem_22():
     """Solution to problem 22."""
-    file_conents = resource_string('projecteuler.data', 'problem_22.dat')
-    file_as_string = file_conents.decode('utf-8')
+    file_contents = resource_string('projecteuler.data', 'problem_22.dat')
+    file_as_string = file_contents.decode('utf-8')
     names = file_as_string.replace('"', '').split(',')
     names.sort()
 

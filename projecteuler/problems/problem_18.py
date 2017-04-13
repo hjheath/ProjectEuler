@@ -5,8 +5,8 @@ from pkg_resources import resource_string
 
 def problem_18():
     """Solution to problem 18."""
-    file_conents = resource_string('projecteuler.data', 'problem_18.dat')
-    file_as_string = file_conents.decode('utf-8')
+    file_contents = resource_string('projecteuler.data', 'problem_18.dat')
+    file_as_string = file_contents.decode('utf-8')
     lines = file_as_string.split('\n')
     triangle = [line.split(' ') for line in lines]
     triangle = [[int(entry) for entry in line] for line in triangle]
