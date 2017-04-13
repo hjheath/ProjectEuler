@@ -38,6 +38,12 @@ class TestInspectors(unittest.TestCase):
         self.assertFalse(inspectors.is_pandigital('012345678'))
         self.assertFalse(inspectors.is_pandigital('1234567899'))
 
+        result = inspectors.is_pandigital('1234567890', include_zero=True)
+        self.assertTrue(result)
+
+        result = inspectors.is_pandigital('123456789', include_zero=True)
+        self.assertFalse(result)
+
     def test_pandigital_product(self):
         """Test detecting pandigital products."""
         # A product with duplicate digits.
