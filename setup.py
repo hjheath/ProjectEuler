@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(
-    name='TowelStuff',
+    name='ProjectEuler',
     version='0.1.0',
     author='Henry Heath',
     author_email='henryjheath@gmail.com',
