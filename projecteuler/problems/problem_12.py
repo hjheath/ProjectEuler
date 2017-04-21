@@ -13,17 +13,11 @@ def problem_12():
     # even or odd.
     for number in count():
         if number % 2 == 0:
-            half = number / 2
-            number_plus = number + 1
-            factor_number = factor_count(half) + factor_count(number_plus)
-            if factor_number > 500:
-                answer = int(half * number_plus)
-                break
+            factor_one = number / 2
+            factor_two = number + 1
         else:
-            half_plus = (number + 1) / 2
-            factor_number = factor_count(half_plus) * factor_count(number)
-            if factor_number > 500:
-                answer = int(half_plus * number)
-                break
-
-    return answer
+            factor_one = (number + 1) / 2
+            factor_two = number
+        total_factors = factor_count(factor_one) * factor_count(factor_two)
+        if total_factors > 500:
+            return int(factor_one * factor_two)
