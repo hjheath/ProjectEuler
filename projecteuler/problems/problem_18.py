@@ -23,6 +23,3 @@ def problem_18():
     triangle.reverse()
     answer = triangle[0][0]
     return answer
-
-if __name__ == '__main__':
-    print(problem_18())

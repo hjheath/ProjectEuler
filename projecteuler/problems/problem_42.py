@@ -26,7 +26,3 @@ def problem_42():
 def triangle_word(word):
     """Check if a word is a triangle word"""
     return sum([ord(character) - 64 for character in word]) in TRIANGLES
-
-
-if __name__ == '__main__':
-    print(problem_42())

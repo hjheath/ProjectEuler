@@ -8,7 +8,3 @@ def problem_20():
     big_number = factorial(100)
     answer = sum(int(x) for x in str(big_number))
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_20())

@@ -15,6 +15,3 @@ def problem_23():
         if not any((number - x in abundant_numbers) for x in abundant_numbers):
             count += number
     return count
-
-if __name__ == '__main__':
-    print(problem_23())

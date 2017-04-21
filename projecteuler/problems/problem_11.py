@@ -44,6 +44,3 @@ def problem_11():
             highest_product = max(product, highest_product)
 
     return highest_product
-
-if __name__ == '__main__':
-    print(problem_11())

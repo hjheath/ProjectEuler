@@ -24,7 +24,3 @@ def problem_8():
             answer = product
 
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_8())

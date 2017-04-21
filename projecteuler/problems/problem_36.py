@@ -15,7 +15,3 @@ def db_palindrome(number):
         return False
     binary = bin(number)[2:]
     return binary == ''.join(reversed(binary))
-
-
-if __name__ == '__main__':
-    print(problem_36())

@@ -21,6 +21,3 @@ def problem_32():
 
     answer = sum(set(product_list))
     return answer
-
-if __name__ == '__main__':
-    print(problem_32())

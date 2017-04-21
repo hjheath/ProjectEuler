@@ -14,7 +14,3 @@ def problem_34():
             answers.append(number)
 
     return sum(answers)
-
-
-if __name__ == '__main__':
-    print(problem_34())

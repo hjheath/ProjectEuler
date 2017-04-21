@@ -29,7 +29,3 @@ def _divisible_slice(perm, divisor, start_index):
     perm_slice = perm[start_index:start_index + 3]
     number = int(''.join(perm_slice))
     return number % divisor == 0
-
-
-if __name__ == '__main__':
-    print(problem_43())

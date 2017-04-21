@@ -27,6 +27,3 @@ def problem_12():
                 break
 
     return answer
-
-if __name__ == '__main__':
-    print(problem_12())

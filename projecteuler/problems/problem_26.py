@@ -22,7 +22,3 @@ def problem_26():
             answer = number
 
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_26())

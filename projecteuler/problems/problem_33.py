@@ -18,7 +18,3 @@ def problem_33():
     product = multiply(curious_fractions)
     answer = product.denominator
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_33())

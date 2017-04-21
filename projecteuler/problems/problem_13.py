@@ -14,7 +14,3 @@ def problem_13():
     # Use a string to perform a slice, but return the answer as an int.
     answer = int(str(start_of_sum)[:10])
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_13())

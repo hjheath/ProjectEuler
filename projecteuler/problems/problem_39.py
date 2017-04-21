@@ -9,7 +9,3 @@ def problem_39():
     perimeters = map(sum, triples)
     perimeters = list(filter(lambda x: x < 1000, perimeters))
     return max(set(perimeters), key=perimeters.count)
-
-
-if __name__ == '__main__':
-    print(problem_39())

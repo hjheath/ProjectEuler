@@ -13,6 +13,3 @@ def problem_38():
         if is_pandigital(product):
             answers.append(int(product))
     return max(answers, default=918273645)
-
-if __name__ == '__main__':
-    print(problem_38())

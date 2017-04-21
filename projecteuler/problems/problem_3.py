@@ -13,7 +13,3 @@ def problem_3():
                      if NUMBER % x == 0]
     answer = prime_factors[-1]
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_3())

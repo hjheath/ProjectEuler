@@ -11,7 +11,3 @@ def problem_6():
     square_of_sum = sum(range(1, 101)) ** 2
     answer = square_of_sum - sum_of_squares
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_6())

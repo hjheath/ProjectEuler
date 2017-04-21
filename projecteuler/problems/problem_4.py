@@ -13,7 +13,3 @@ def problem_4():
             if is_palindrome(product) and product > answer:
                 answer = product
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_4())

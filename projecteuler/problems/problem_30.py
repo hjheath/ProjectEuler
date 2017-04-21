@@ -12,7 +12,3 @@ def problem_30():
 
     answer = count
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_30())

@@ -23,7 +23,3 @@ def problem_5():
     # This multiplies together the elements of the list.
     answer = multiply(factors)
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_5())

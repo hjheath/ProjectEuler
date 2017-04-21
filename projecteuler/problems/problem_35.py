@@ -29,7 +29,3 @@ def potential_prime(prime):
     if any(digit in str(prime) for digit in disallowed_digits):
         return False
     return True
-
-
-if __name__ == '__main__':
-    print(problem_35())

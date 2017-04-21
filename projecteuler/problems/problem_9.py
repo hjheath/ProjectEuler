@@ -8,7 +8,3 @@ def problem_9():
                if a ** 2 + b ** 2 == (1000 - a - b) ** 2]
     answer = triplet[0][0] * triplet[0][1] * triplet[0][2]
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_9())

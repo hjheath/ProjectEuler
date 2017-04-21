@@ -9,7 +9,3 @@ def problem_15():
         # This is 2n choose n.
         combinations = combinations * (grid_size + i) // i
     return combinations
-
-
-if __name__ == '__main__':
-    print(problem_15())

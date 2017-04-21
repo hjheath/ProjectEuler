@@ -17,7 +17,3 @@ def problem_22():
 
     answer = sum(values)
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_22())

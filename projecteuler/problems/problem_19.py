@@ -11,6 +11,3 @@ def problem_19():
     # An entry correpsonding to 6 denotes Sunday.
     answer = first_days.count(6)
     return answer
-
-if __name__ == '__main__':
-    print(problem_19())

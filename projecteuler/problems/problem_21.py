@@ -21,7 +21,3 @@ def problem_21():
 
     answer = sum(amicable_numbers)
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_21())

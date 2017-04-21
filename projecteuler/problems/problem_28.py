@@ -11,7 +11,3 @@ def problem_28():
             count += corner
 
     return count
-
-
-if __name__ == '__main__':
-    print(problem_28())

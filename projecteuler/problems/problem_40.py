@@ -19,7 +19,3 @@ def problem_40():
         digit = value[-(difference + 1)]
         answers.append(int(digit))
     return multiply(answers)
-
-
-if __name__ == '__main__':
-    print(problem_40())

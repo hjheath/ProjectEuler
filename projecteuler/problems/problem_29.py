@@ -6,7 +6,3 @@ def problem_29():
     powers = [a ** b for a in range(2, 101) for b in range(2, 101)]
     answer = len(set(powers))
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_29())

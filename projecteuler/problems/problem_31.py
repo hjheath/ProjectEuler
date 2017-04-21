@@ -40,6 +40,3 @@ def problem_31():
 
     answer = combinations(200, len(coins) - 1)
     return answer
-
-if __name__ == '__main__':
-    print(problem_31())

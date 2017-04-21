@@ -34,7 +34,3 @@ class CollatzCalculator(object):
         else:
             count = self.count_cache[number]
         return count
-
-
-if __name__ == '__main__':
-    print(problem_14())

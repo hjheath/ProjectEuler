@@ -42,7 +42,3 @@ def check_truncated(number, prime_set, truncate_function):
         number = truncate_function(number)
         if number not in prime_set:
             raise RuntimeError
-
-
-if __name__ == '__main__':
-    print(problem_37())

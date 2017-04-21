@@ -12,7 +12,3 @@ def problem_17():
         answer += len(stripped_word)
 
     return answer
-
-
-if __name__ == '__main__':
-    print(problem_17())
