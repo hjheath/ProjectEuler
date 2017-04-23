@@ -64,6 +64,18 @@ def triangle_numbers():
         number += 1
 
 
+def pentagon_numbers():
+    """
+    Pentagon number generator
+
+    Use the formula: n(3n−1)/2
+    """
+    number = 1
+    while True:
+        yield int(number * (3 * number - 1) / 2)
+        number += 1
+
+
 def next_collatz(number):
     """
     Get the next number in a collatz series.

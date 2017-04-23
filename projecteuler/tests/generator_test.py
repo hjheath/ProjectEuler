@@ -8,6 +8,7 @@ import projecteuler.generators as generators
 FIBONACCIS = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
 PRIMES = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47]
 TRIANGLES = [1, 3, 6, 10, 15, 21, 28, 36, 45]
+PENTAGONS = [1, 5, 12, 22, 35, 51, 70, 92, 117, 145]
 
 
 class TestGenerators(unittest.TestCase):
@@ -43,9 +44,15 @@ class TestGenerators(unittest.TestCase):
 
     def test_triangle_numbers(self):
         """Test the triangle number generator function."""
-        triangles = [x for x in takewhile(lambda x: x < 50,
-                                          generators.triangle_numbers())]
+        generator = generators.triangle_numbers()
+        triangles = [x for x in takewhile(lambda x: x < 50, generator)]
         self.assertEqual(triangles, TRIANGLES)
+
+    def test_pentagon_numbers(self):
+        """Test the pentagon number generator function."""
+        generator = generators.pentagon_numbers()
+        pentagons = [x for x in takewhile(lambda x: x < 150, generator)]
+        self.assertEqual(pentagons, PENTAGONS)
 
     def test_next_collatz(self):
         """Test the function to get the next number in a collatz sequence."""
