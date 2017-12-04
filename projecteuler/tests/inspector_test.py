@@ -60,3 +60,13 @@ class TestInspectors(unittest.TestCase):
 
         # Test the trivial case is False.
         self.assertFalse(inspectors.is_curious_fraction(30, 50))
+
+    def test_is_pentagonal(self):
+        """Test detecting pentagonal numbers."""
+        self.assertTrue(inspectors.is_pentagonal(1))
+        self.assertTrue(inspectors.is_pentagonal(145))
+        self.assertTrue(inspectors.is_pentagonal(715))
+
+        self.assertFalse(inspectors.is_pentagonal(2))
+        self.assertFalse(inspectors.is_pentagonal(7))
+        self.assertFalse(inspectors.is_pentagonal(2017))

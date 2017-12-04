@@ -33,6 +33,7 @@ def is_prime(number):
             return False
     return True
 
+
 def is_pandigital(number, include_zero=False):
     """Determine if a number (as a string) is pandigital"""
     number_set = set(number)
@@ -90,3 +91,15 @@ def is_curious_fraction(numerator, denominator):
             return True
 
     return False
+
+
+def is_pentagonal(number):
+    """
+    Check if a number is pentagonal.
+
+    :param number: The int to check.
+
+    :returns: True if the number is pentagonal, else False.
+    """
+    result = ((1 + sqrt(1 + 24 * number)) / 6)
+    return result.is_integer()
