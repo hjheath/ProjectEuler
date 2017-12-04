@@ -70,3 +70,13 @@ class TestInspectors(unittest.TestCase):
         self.assertFalse(inspectors.is_pentagonal(2))
         self.assertFalse(inspectors.is_pentagonal(7))
         self.assertFalse(inspectors.is_pentagonal(2017))
+
+    def test_is_hexagonal(self):
+        """Test detecting hexagonal numbers."""
+        self.assertTrue(inspectors.is_hexagonal(1))
+        self.assertTrue(inspectors.is_hexagonal(66))
+        self.assertTrue(inspectors.is_hexagonal(153))
+
+        self.assertFalse(inspectors.is_hexagonal(2))
+        self.assertFalse(inspectors.is_hexagonal(7))
+        self.assertFalse(inspectors.is_hexagonal(2018))

@@ -103,3 +103,15 @@ def is_pentagonal(number):
     """
     result = ((1 + sqrt(1 + 24 * number)) / 6)
     return result.is_integer()
+
+
+def is_hexagonal(number):
+    """
+    Check if a number is hexagonal.
+
+    :param number: The int to check.
+
+    :returns: True if the number is hexagonal, else False.
+    """
+    result = ((1 + sqrt(1 + 8 * number)) / 4)
+    return result.is_integer()
